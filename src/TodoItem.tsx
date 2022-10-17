@@ -1,4 +1,4 @@
-import { TodoItem as TodoItemType } from './models/types'
+import { TodoItem as TodoItemType } from './types/types'
 import classNames from 'classnames'
 
 function TodoItem({ name, description, isDone }: TodoItemType) {
