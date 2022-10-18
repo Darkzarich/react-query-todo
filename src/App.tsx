@@ -1,8 +1,8 @@
-import { useState } from 'react'
 import Header from './Header'
-import './App.css'
 import TodoItem from './TodoItem'
 import AddForm from './AddForm'
+import './App.css'
+import TodoList from './TodoList'
 
 function App() {
   return (
@@ -12,24 +12,7 @@ function App() {
         <AddForm />
 
         <div className="flex flex-col bg-slate-600 rounded-md mt-4">
-          <TodoItem
-            name="Task1"
-            id={1}
-            isDone={false}
-            description="my test task"
-          />
-          <TodoItem
-            name="Task2"
-            id={2}
-            isDone={false}
-            description="my test task"
-          />
-          <TodoItem
-            name="Task3"
-            id={3}
-            isDone={true}
-            description="my test task"
-          />
+          <TodoList />
         </div>
       </div>
     </>

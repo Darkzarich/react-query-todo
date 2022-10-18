@@ -7,3 +7,22 @@
 html {
   font-family: 'Roboto', sans-serif;
 }
+
+.loader {
+  display: inline-block;
+  position: relative;
+  width: 55px;
+  height: 55px;
+}
+
+.loader div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 39px;
+  height: 39px;
+  margin: 10px;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  border-color: #fff transparent transparent transparent;
+}
