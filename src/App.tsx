@@ -1,5 +1,4 @@
 import Header from './Header'
-import TodoItem from './TodoItem'
 import AddForm from './AddForm'
 import './App.css'
 import TodoList from './TodoList'
