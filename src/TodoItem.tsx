@@ -3,7 +3,7 @@ import classNames from 'classnames'
 
 function TodoItem({ name, description, isDone }: TodoItemType) {
   return (
-    <div className="flex justify-between border-2 border-transparent border-b-slate-800 p-5">
+    <div className="flex flex-col lg:flex-row justify-between border-2 border-transparent border-b-slate-800 p-5">
       <div>
         <div
           className={classNames(
@@ -17,7 +17,7 @@ function TodoItem({ name, description, isDone }: TodoItemType) {
           {description}
         </div>
       </div>
-      <div className="flex gap-3 items-center">
+      <div className="flex gap-3 items-center mt-3 lg:mt-0">
         {!isDone && (
           <button className="bg-green-600 hover:bg-green-500 text-white p-2 rounded-md w-[120px] h-[40px]">
             Complete

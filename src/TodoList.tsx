@@ -11,7 +11,6 @@ export function TodoList() {
     isError,
     data: todos,
   } = useQuery(['todos'], {
-    retry: false,
     queryFn: getTodoList,
   })
 
