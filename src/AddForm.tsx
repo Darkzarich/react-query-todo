@@ -2,7 +2,7 @@ import { useMutation, useQueryClient } from '@tanstack/react-query'
 import { nanoid } from 'nanoid'
 import { FormEvent, useState } from 'react'
 import { Api } from './api'
-import { TodoItem } from './types/types'
+import { Todo } from './types/types'
 
 function AddForm() {
   const queryClient = useQueryClient()
@@ -11,7 +11,7 @@ function AddForm() {
   const [desc, setDesc] = useState('')
 
   const addTodoMutation = useMutation({
-    mutationFn: (newTodo: TodoItem) => Api.addTodo(newTodo),
+    mutationFn: (newTodo: Todo) => Api.addTodo(newTodo),
     onSuccess: () => {
       queryClient.invalidateQueries(['todos'])
     },
