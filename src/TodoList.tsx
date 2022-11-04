@@ -1,6 +1,6 @@
 import { useQuery } from '@tanstack/react-query'
 
-import { getTodoList } from './api'
+import { Api } from './api'
 import Loader from './Loader'
 
 import TodoItem from './TodoItem'
@@ -11,7 +11,7 @@ export function TodoList() {
     isError,
     data: todos,
   } = useQuery(['todos'], {
-    queryFn: getTodoList,
+    queryFn: Api.getTodos,
   })
 
   if (isLoading) {
